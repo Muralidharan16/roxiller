@@ -11,7 +11,7 @@ app.use(express.json());
 
 dbPath = path.join(__dirname, 'mydatabase.db');
 let db = null;
-const PORT = 3002;
+const PORT = process.env.PORT || 3002;
 
 // Initialize the db
 
