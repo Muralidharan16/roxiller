@@ -4,7 +4,9 @@ const {open} = require('sqlite');
 const sqlite3 = require('sqlite3');
 const axios = require('axios');
 const cors = require('cors');
+const dotenv = require('dotenv');
 
+dotenv.config();
 const app = express();
 app.use(cors())
 app.use(express.json());
